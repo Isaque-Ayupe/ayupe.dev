@@ -12,6 +12,7 @@ const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
+  {/* Função para validar email */}
   const validateEmail = (email: string) => {
     return String(email)
       .toLowerCase()
