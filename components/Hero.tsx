@@ -7,13 +7,9 @@ const Hero: React.FC = () => {
     <section className="relative pt-40 pb-32 overflow-hidden min-h-[90vh] flex items-center">
       {/* Background Fluid Animation */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        {/* Blob 1 */}
         <div className="absolute top-[10%] left-[10%] w-[500px] h-[500px] bg-indigo-500/20 dark:bg-indigo-600/10 blur-[120px] rounded-full animate-blob-float will-change-transform"></div>
-        {/* Blob 2 */}
         <div className="absolute bottom-[10%] right-[15%] w-[600px] h-[600px] bg-violet-500/20 dark:bg-violet-600/10 blur-[140px] rounded-full animate-blob-float-reverse will-change-transform delay-700"></div>
-        {/* Blob 3 */}
         <div className="absolute top-[40%] right-[20%] w-[450px] h-[450px] bg-blue-400/10 dark:bg-blue-900/10 blur-[100px] rounded-full animate-blob-float will-change-transform delay-1000"></div>
-        {/* Blob 4 - Accent */}
         <div className="absolute bottom-[20%] left-[25%] w-[300px] h-[300px] bg-emerald-400/10 dark:bg-emerald-900/5 blur-[80px] rounded-full animate-blob-float-reverse will-change-transform delay-300"></div>
       </div>
 
@@ -29,9 +25,27 @@ const Hero: React.FC = () => {
             & Backend <span className="italic font-serif normal-case tracking-normal text-indigo-500/80">Robusto</span>.
           </h1>
           
+          {/* Frase Animada Otimizada */}
+          <div className="reveal-on-scroll delay-150 flex flex-wrap items-center gap-x-4 text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200 mb-8">
+            <span className="leading-relaxed">Onde a lógica encontra a</span>
+            <div className="relative h-[1.2em] overflow-hidden inline-flex items-center min-w-[220px]">
+              {/* Moldura de foco sutil */}
+              <div className="absolute inset-x-0 bottom-0 h-[2px] bg-indigo-600/40 rounded-full"></div>
+              
+              <div className="animate-text-slide flex flex-col w-full">
+                <span className="h-[1.2em] flex items-center text-indigo-600 dark:text-indigo-400 leading-none">Inteligência</span>
+                <span className="h-[1.2em] flex items-center text-violet-600 dark:text-violet-400 leading-none">Inovação</span>
+                <span className="h-[1.2em] flex items-center text-blue-600 dark:text-blue-400 leading-none">Escalabilidade</span>
+                <span className="h-[1.2em] flex items-center text-emerald-600 dark:text-emerald-400 leading-none">Performance</span>
+                {/* O 5º elemento garante o loop perfeito ao transicionar de volta para o 1º */}
+                <span className="h-[1.2em] flex items-center text-indigo-600 dark:text-indigo-400 leading-none">Inteligência</span>
+              </div>
+            </div>
+          </div>
+          
           <p className="reveal-on-scroll delay-200 text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-12 leading-relaxed max-w-2xl font-medium">
             Desenvolvedor <span className="text-slate-900 dark:text-white font-bold">Ayupe</span>. 
-            Especialista em Laravel, Python e a vanguarda dos Agentes de IA Autônomos.
+            Especialista em Python e Agentes de IA Autônomos.
           </p>
 
           <div className="reveal-on-scroll delay-300 flex flex-wrap gap-5">
@@ -55,8 +69,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-4">Connect</span>
               <div className="flex items-center gap-6">
-                <a href="https://github.com" target="_blank" className="text-slate-400 hover:text-indigo-600 transition-all hover:scale-125">
-                  {/* Changed from <github /> to <Github /> */}
+                <a href="https://github.com/Isaque-Ayupe" target="_blank" className="text-slate-400 hover:text-indigo-600 transition-all hover:scale-125">
                   <Github className="w-7 h-7" />
                 </a>
                 <a href="https://linkedin.com" target="_blank" className="text-slate-400 hover:text-indigo-600 transition-all hover:scale-125">
@@ -67,7 +80,7 @@ const Hero: React.FC = () => {
             <div className="h-12 w-[1px] bg-slate-200 dark:bg-slate-800"></div>
             <div className="flex flex-col">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-2">Location</span>
-              <span className="text-sm font-bold dark:text-slate-300">Brasil / Remoto</span>
+              <span className="text-sm font-bold dark:text-slate-300">Brasil - Goiania / Remoto</span>
             </div>
           </div>
         </div>

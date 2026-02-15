@@ -82,7 +82,6 @@ const App: React.FC = () => {
             &copy; {new Date().getFullYear()} Ayupe. Engenharia de Software & IA.
           </p>
           <div className="flex justify-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
-            <span>Laravel</span>
             <span>•</span>
             <span>Python</span>
             <span>•</span>

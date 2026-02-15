@@ -21,6 +21,7 @@
               'blob-float': 'blobFloat 20s infinite alternate cubic-bezier(0.45, 0, 0.55, 1)',
               'blob-float-reverse': 'blobFloat 25s infinite alternate-reverse cubic-bezier(0.45, 0, 0.55, 1)',
               'pulse-subtle': 'pulseSubtle 3s infinite ease-in-out',
+              'text-slide': 'textSlide 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
             },
             keyframes: {
               fadeUp: {
@@ -40,6 +41,13 @@
               pulseSubtle: {
                 '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(79, 70, 229, 0.4)' },
                 '50%': { transform: 'scale(1.03)', boxShadow: '0 0 20px 10px rgba(79, 70, 229, 0)' },
+              },
+              textSlide: {
+                '0%, 20%': { transform: 'translateY(0%)' },
+                '25%, 45%': { transform: 'translateY(-20%)' },
+                '50%, 70%': { transform: 'translateY(-40%)' },
+                '75%, 95%': { transform: 'translateY(-60%)' },
+                '100%': { transform: 'translateY(-80%)' },
               }
             }
           }
