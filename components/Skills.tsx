@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
         <div className="reveal-on-scroll text-center mb-20">
           <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tight">Competências <span className="text-indigo-600">Core</span></h2>
           <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            Minha caixa de ferramentas técnica, focada em criar experiências digitais inteligentes e APIs robustas.
+            Minha caixa de ferramentas técnica, focada em criar experiências digitais inteligentes e soluções para o seu problema.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
           </div>
           <div className="flex gap-4 relative z-10">
             <div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl text-white font-bold text-sm">Escalabilidade</div>
-            <div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl text-white font-bold text-sm">Segurança</div>
+            <div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl text-white font-bold text-sm">Soluções Personalizadas</div>
           </div>
         </div>
       </div>

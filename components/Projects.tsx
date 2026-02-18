@@ -5,7 +5,7 @@ import { PROJECTS } from '../constants';
 import { Project } from '../types';
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<'All' | 'AI' | 'Backend' | 'Automation'>('All');
+  const [filter, setFilter] = useState<'All' | 'AI' | 'Backend' | 'Automation' | 'Fullstack'>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const filteredProjects = filter === 'All' ? PROJECTS : PROJECTS.filter(p => p.category === filter);
@@ -19,11 +19,11 @@ const Projects: React.FC = () => {
           <div className="max-w-2xl">
             <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tight uppercase">Projetos <span className="text-indigo-600">Em Destaque</span></h2>
             <p className="text-slate-500 dark:text-slate-400 text-lg">
-              Soluções de engenharia que combinam robustez de backend com a inteligência de modelos de linguagem de larga escala.
+              Soluções de engenharia que combinam necessidade e solução, utilizando tecnologias modernas para realizar essa missão da melhor forma possível.
             </p>
           </div>
           <div className="flex bg-slate-100 dark:bg-slate-800 p-1.5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-inner">
-            {(['All', 'AI', 'Backend', 'Automation'] as const).map((f) => (
+            {(['All', 'AI', 'Fullstack'] as const).map((f) => (
               <button
                 key={f}
                 onClick={() => setFilter(f)}

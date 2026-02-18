@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
               >
                 {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5" />}
               </button>
-              <a href="https://github.com" target="_blank" className="p-3 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:scale-110 active:scale-95 transition-all shadow-md">
+              <a href="https://github.com/isaque-ayupe" target="_blank" className="p-3 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:scale-110 active:scale-95 transition-all shadow-md">
                 <Github className="w-5 h-5" />
               </a>
             </div>
