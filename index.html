@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayupe | Software Engineer & AI Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            animation: {
+              'fade-up': 'fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'reveal': 'reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards',
+              'blob-float': 'blobFloat 20s infinite alternate cubic-bezier(0.45, 0, 0.55, 1)',
+              'blob-float-reverse': 'blobFloat 25s infinite alternate-reverse cubic-bezier(0.45, 0, 0.55, 1)',
+              'pulse-subtle': 'pulseSubtle 3s infinite ease-in-out',
+              'text-slide': 'textSlide 10s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+            },
+            keyframes: {
+              fadeUp: {
+                '0%': { opacity: '0', transform: 'translateY(40px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              reveal: {
+                '0%': { transform: 'scaleX(0)', transformOrigin: 'left' },
+                '100%': { transform: 'scaleX(1)', transformOrigin: 'left' },
+              },
+              blobFloat: {
+                '0%': { transform: 'translate(-10%, -10%) scale(1) rotate(0deg)' },
+                '33%': { transform: 'translate(20%, 30%) scale(1.2) rotate(120deg)' },
+                '66%': { transform: 'translate(-20%, 40%) scale(0.8) rotate(240deg)' },
+                '100%': { transform: 'translate(-10%, -10%) scale(1) rotate(360deg)' },
+              },
+              pulseSubtle: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(79, 70, 229, 0.4)' },
+                '50%': { transform: 'scale(1.03)', boxShadow: '0 0 20px 10px rgba(79, 70, 229, 0)' },
+              },
+              textSlide: {
+                '0%, 20%': { transform: 'translateY(0%)' },
+                '25%, 45%': { transform: 'translateY(-20%)' },
+                '50%, 70%': { transform: 'translateY(-40%)' },
+                '75%, 95%': { transform: 'translateY(-60%)' },
+                '100%': { transform: 'translateY(-80%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      ::selection {
+        background: rgba(99, 102, 241, 0.3);
+        color: #fff;
+      }
+      
+      .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+        transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+      .reveal-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      .delay-100 { transition-delay: 100ms; }
+      .delay-200 { transition-delay: 200ms; }
+      .delay-300 { transition-delay: 300ms; }
+      .delay-400 { transition-delay: 400ms; }
+      .delay-500 { transition-delay: 500ms; }
+
+      /* Grain Texture */
+      .bg-grain {
+        position: relative;
+      }
+      .bg-grain::before {
+        content: "";
+        position: fixed;
+        inset: -200%;
+        width: 400%;
+        height: 400%;
+        z-index: 50;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.03;
+        pointer-events: none;
+        animation: noise-move 0.2s steps(2) infinite;
+      }
+
+      @keyframes noise-move {
+        0% { transform: translate(0,0); }
+        100% { transform: translate(1%,1%); }
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4f46e5;
+        border-radius: 10px;
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DkL_5Ihw.js"></script>
+</head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-500 overflow-x-hidden bg-grain">
+    <div id="root"></div>
+  </body>
+</html>
