@@ -3,68 +3,47 @@ import { Project, Skill, Experience } from './types';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'fac-ai',
-    title: 'FAC.AI',
-    description: 'Plataforma multi-agente para síntese de conteúdo inteligente.',
+    id: 'Condomananger',
+    title: 'CondoManager',
+    description: 'Plataforma para gerenciamento de condomínios, com foco em produtividade e simplicidade.',
     longDescription: 'Sistema capaz de processar vídeos do YouTube, áudios do Spotify e documentos PDF para gerar resumos, insights e uma base de conhecimento pesquisável. Construído com foco em produtividade e IA aplicada.',
-    tags: ['Python', 'NiceGUI', 'Whisper', 'OpenAI', 'LangChain'],
-    image: 'https://picsum.photos/seed/facai/800/600',
-    category: 'AI'
+    tags: ['Python', 'Flask', 'MySQL', 'JavaScript'],
+    image: 'images/Condomananger.png',
+    githubUrl: 'https://github.com/Isaque-Ayupe/Condomanger',
+    category: 'Fullstack'
   },
   {
     id: 'jarvis-agent',
-    title: 'JARVIS-Style Agent',
+    title: 'JARVIS',
     description: 'Assistente pessoal controlado por voz integrado ao ambiente de desenvolvimento.',
-    longDescription: 'Agente autônomo que utiliza Whisper para transcrição em tempo real e LLMs para execução de comandos de sistema, automação de tarefas na IDE e controle de fluxo de trabalho.',
-    tags: ['Python', 'Whisper', 'Groq', 'Automation', 'Voice Control'],
-    image: 'https://picsum.photos/seed/jarvis/800/600',
+    longDescription: 'Agente autônomo que utiliza ferramentas como Whisper para transcrição em tempo real, agentes que fazem abstração do comando de voz e enviam um json completo para a IDE construir o comando a ser executado.',
+    tags: ['Python','Automation', 'Voice Control'],
+    image: 'images/Jarvis.png',
+    githubUrl: 'https://github.com/ayupe/jarvis-agent',
     category: 'AI'
   },
-  {
-    id: 'laravel-api',
-    title: 'Enterprise REST API',
-    description: 'Arquitetura robusta para sistemas escaláveis em Laravel.',
-    longDescription: 'Desenvolvimento de APIs com foco em segurança, implementação de Rate Limiting, autenticação JWT/Sanctum e documentação via Swagger/L5-Swagger.',
-    tags: ['Laravel', 'PHP', 'MySQL', 'Redis', 'Docker'],
-    image: 'https://picsum.photos/seed/laravel/800/600',
-    category: 'Backend'
-  },
-  {
-    id: 'automation-vdl',
-    title: 'Media Automation Suite',
-    description: 'Pipeline de automação para download e processamento de mídia.',
-    longDescription: 'Integração de yt-dlp com workflows de pós-processamento para extração de dados, conversão de formatos e indexação automática em bancos de dados vetoriais.',
-    tags: ['Python', 'yt-dlp', 'Bash', 'FFmpeg'],
-    image: 'https://picsum.photos/seed/media/800/600',
-    category: 'Automation'
-  }
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Laravel', level: 90, category: 'Frameworks' },
-  { name: 'PHP', level: 85, category: 'Languages' },
+  { name: 'Flask', level: 90, category: 'Frameworks' },
   { name: 'Python', level: 90, category: 'Languages' },
+  { name: 'JavaScript', level: 90, category: 'Languages' },
   { name: 'REST APIs', level: 95, category: 'Infrastructure' },
-  { name: 'LLM Integration', level: 88, category: 'AI & Tools' },
+  { name: 'REST APIs', level: 95, category: 'Infrastructure' },
+  { name: 'MySQL', level: 90, category: 'Infrastructure' },
   { name: 'AI Agents', level: 85, category: 'AI & Tools' },
   { name: 'Whisper/Speech', level: 80, category: 'AI & Tools' },
-  { name: 'NiceGUI', level: 75, category: 'Frameworks' },
   { name: 'React', level: 65, category: 'Frameworks' },
   { name: 'Docker', level: 70, category: 'Infrastructure' },
+
 ];
 
 export const TIMELINE: Experience[] = [
   {
-    year: '2024 - Presente',
-    title: 'Foco em Agentes Autônomos',
-    company: 'Projetos Independentes',
-    description: 'Desenvolvimento do ecossistema FAC.AI e integração de modelos Groq para baixa latência em agentes de voz.'
-  },
-  {
-    year: '2023 - 2024',
-    title: 'Especialização em Backend',
-    company: 'Estudos de Engenharia',
-    description: 'Aprofundamento em arquitetura de microsserviços com Laravel e padrões de design em Python.'
+    year: '2025 - Presente',
+    title: 'Analista de Helpdesk',
+    company: 'Virtua Software',
+    description: 'Suporte ao sistema, análise de requisitos de modificação e correção. Querys SQL e manutenção de banco de dados FIREBIRD'
   },
   {
     year: '2022',

@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Mail, MessageSquare, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { sendContactEmail } from '../emailService';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -39,14 +40,14 @@ const Contact: React.FC = () => {
 
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
-      // Simulação de envio de API
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Resetar mensagem de sucesso após 5 segundos
-      setTimeout(() => setIsSuccess(false), 5000);
+      try {
+        await sendContactEmail(formData);
+        setIsSuccess(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSuccess(false), 5000);
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -82,7 +83,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-200 mb-1">Direct Email</p>
-                    <p className="text-xl font-bold tracking-tight">contato@ayupe.dev</p>
+                    <p className="text-xl font-bold tracking-tight">isaque.ayupe@gmail.com</p>
                   </div>
                 </div>
                 <div className="reveal-on-scroll delay-300 flex items-center gap-6 group">
@@ -91,7 +92,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-200 mb-1">LinkedIn Network</p>
-                    <p className="text-xl font-bold tracking-tight">linkedin.com/in/ayupe</p>
+                    <p className="text-xl font-bold tracking-tight">www.linkedin.com/in/isaque-ayupe-ab5279308</p>
                   </div>
                 </div>
               </div>

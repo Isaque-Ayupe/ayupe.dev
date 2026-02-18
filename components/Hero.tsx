@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl">
           <div className="reveal-on-scroll inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50/50 dark:bg-indigo-900/20 backdrop-blur-md border border-indigo-100/50 dark:border-indigo-800/30 text-indigo-600 dark:text-indigo-400 text-sm font-bold mb-8 shadow-sm">
             <Sparkles className="w-4 h-4" />
-            Engenheiro de Software & Especialista em IA
+            Engenheiro de Software & entusiasta em IA
           </div>
           
           <h1 className="reveal-on-scroll delay-100 text-6xl md:text-8xl font-black tracking-tighter text-slate-900 dark:text-white mb-8 leading-[0.95] uppercase">
@@ -44,8 +44,8 @@ const Hero: React.FC = () => {
           </div>
           
           <p className="reveal-on-scroll delay-200 text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-12 leading-relaxed max-w-2xl font-medium">
-            Desenvolvedor <span className="text-slate-900 dark:text-white font-bold">Ayupe</span>. 
-            Especialista em Python e Agentes de IA Autônomos.
+            Isaque <span className="text-slate-900 dark:text-white font-bold">Ayupe</span>. 
+            Desenvolvedor Full-Stack com experiência em Python, Flask, React e Agentes de IA Autônomos.
           </p>
 
           <div className="reveal-on-scroll delay-300 flex flex-wrap gap-5">
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
                 <a href="https://github.com/Isaque-Ayupe" target="_blank" className="text-slate-400 hover:text-indigo-600 transition-all hover:scale-125">
                   <Github className="w-7 h-7" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" className="text-slate-400 hover:text-indigo-600 transition-all hover:scale-125">
+                <a href="https://linkedin.com/in/isaque-ayupe-ab5279308" target="_blank" className="text-slate-400 hover:text-indigo-600 transition-all hover:scale-125">
                   <Linkedin className="w-7 h-7" />
                 </a>
               </div>

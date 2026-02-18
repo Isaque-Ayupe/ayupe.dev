@@ -11,9 +11,9 @@ const About: React.FC = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
             <div className="relative bg-slate-100 dark:bg-slate-800 rounded-2xl p-8 overflow-hidden aspect-square flex items-center justify-center">
               <img 
-                src="https://picsum.photos/seed/profile/600/600" 
+                src="/images/profile.png"
                 alt="Ayupe" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-4/5 h-full object-cover rounded-lg"
               />
             </div>
           </div>
@@ -25,7 +25,7 @@ const About: React.FC = () => {
                 Como estudante de Engenharia de Software e Analista de Sistemas, vejo o desenvolvimento como a arte de resolver problemas complexos com elegância e eficiência.
               </p>
               <p>
-                Minha paixão reside na intersecção entre o <span className="text-indigo-600 font-medium">Backend robusto</span> e a <span className="text-indigo-600 font-medium">Inteligência Artificial de ponta</span>. Acredito que o futuro das aplicações está em sistemas autônomos que não apenas processam dados, mas entendem o contexto e agem de forma proativa.
+                Minha paixão reside na intersecção entre o <span className="text-indigo-600 font-medium">o Problema do usuário</span> e a <span className="text-indigo-600 font-medium">a Solução Tecnológica</span>. Acredito que o futuro das aplicações está em sistemas autônomos que não apenas processam dados, mas entendem o contexto e agem de forma proativa, a fim de  <span className="text-indigo-600 font-medium">Otimizar o seu dia-a-dia.</span>.
               </p>
             </div>
 
@@ -35,14 +35,14 @@ const About: React.FC = () => {
                   <BookOpen className="w-5 h-5 text-indigo-600" />
                   <h4 className="font-semibold text-slate-900 dark:text-white">Estudando Agora</h4>
                 </div>
-                <p className="text-sm text-slate-500">LLM Fine-tuning & Graph Neural Networks</p>
+                <p className="text-sm text-slate-500">Machine Learning e computação em nuvem</p>
               </div>
               <div className="reveal-on-scroll delay-300 p-4 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50">
                 <div className="flex items-center gap-3 mb-2">
                   <Zap className="w-5 h-5 text-indigo-600" />
                   <h4 className="font-semibold text-slate-900 dark:text-white">Foco Atual</h4>
                 </div>
-                <p className="text-sm text-slate-500">Agentes de IA com Memória de Longo Prazo</p>
+                <p className="text-sm text-slate-500">aplicações reais com Agentes de IA e deploy seguro na nuvem</p>
               </div>
             </div>
           </div>
