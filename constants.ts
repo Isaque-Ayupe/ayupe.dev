@@ -29,7 +29,6 @@ export const SKILLS: Skill[] = [
   { name: 'Python', level: 90, category: 'Languages' },
   { name: 'JavaScript', level: 90, category: 'Languages' },
   { name: 'REST APIs', level: 95, category: 'Infrastructure' },
-  { name: 'REST APIs', level: 95, category: 'Infrastructure' },
   { name: 'MySQL', level: 90, category: 'Infrastructure' },
   { name: 'AI Agents', level: 85, category: 'AI & Tools' },
   { name: 'Whisper/Speech', level: 80, category: 'AI & Tools' },
