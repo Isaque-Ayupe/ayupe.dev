@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
             <div className="relative bg-slate-100 dark:bg-slate-800 rounded-2xl p-8 overflow-hidden aspect-square flex items-center justify-center">
               <img 
-                src= 'images/Profile.png'
+                src={`${import.meta.env.BASE_URL}images/profile.png`}
                 alt="Ayupe" 
                 className="w-4/5 h-full object-cover rounded-lg"
               />
